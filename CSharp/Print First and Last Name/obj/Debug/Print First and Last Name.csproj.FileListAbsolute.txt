@@ -1,0 +1,6 @@
+c:\users\admin\documents\visual studio 2013\Projects\Introduction to Programming\Print First and Last Name\bin\Debug\Print First and Last Name.exe.config
+c:\users\admin\documents\visual studio 2013\Projects\Introduction to Programming\Print First and Last Name\bin\Debug\Print First and Last Name.exe
+c:\users\admin\documents\visual studio 2013\Projects\Introduction to Programming\Print First and Last Name\bin\Debug\Print First and Last Name.pdb
+c:\users\admin\documents\visual studio 2013\Projects\Introduction to Programming\Print First and Last Name\obj\Debug\Print First and Last Name.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2013\Projects\Introduction to Programming\Print First and Last Name\obj\Debug\Print First and Last Name.exe
+c:\users\admin\documents\visual studio 2013\Projects\Introduction to Programming\Print First and Last Name\obj\Debug\Print First and Last Name.pdb

@@ -1,0 +1,5 @@
+c:\users\admin\documents\visual studio 2013\Projects\Introduction to Programming\Print a Sequence\bin\Debug\Print a Sequence.exe.config
+c:\users\admin\documents\visual studio 2013\Projects\Introduction to Programming\Print a Sequence\bin\Debug\Print a Sequence.exe
+c:\users\admin\documents\visual studio 2013\Projects\Introduction to Programming\Print a Sequence\bin\Debug\Print a Sequence.pdb
+c:\users\admin\documents\visual studio 2013\Projects\Introduction to Programming\Print a Sequence\obj\Debug\Print a Sequence.exe
+c:\users\admin\documents\visual studio 2013\Projects\Introduction to Programming\Print a Sequence\obj\Debug\Print a Sequence.pdb
