@@ -1,0 +1,6 @@
+c:\users\admin\documents\visual studio 2013\Projects\IntroductiontoProgramming\IntroductiontoProgramming\bin\Debug\IntroductiontoProgramming.exe.config
+c:\users\admin\documents\visual studio 2013\Projects\IntroductiontoProgramming\IntroductiontoProgramming\bin\Debug\IntroductiontoProgramming.exe
+c:\users\admin\documents\visual studio 2013\Projects\IntroductiontoProgramming\IntroductiontoProgramming\bin\Debug\IntroductiontoProgramming.pdb
+c:\users\admin\documents\visual studio 2013\Projects\IntroductiontoProgramming\IntroductiontoProgramming\obj\Debug\IntroductiontoProgramming.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2013\Projects\IntroductiontoProgramming\IntroductiontoProgramming\obj\Debug\IntroductiontoProgramming.exe
+c:\users\admin\documents\visual studio 2013\Projects\IntroductiontoProgramming\IntroductiontoProgramming\obj\Debug\IntroductiontoProgramming.pdb
