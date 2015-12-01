@@ -1,0 +1,11 @@
+using System;
+
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			int hexvalue = 0xfe;
+			Console.WriteLine(hexvalue);		}
+	}
+}

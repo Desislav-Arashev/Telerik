@@ -1,0 +1,16 @@
+using System;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        string firstName;
+        string middleName;
+        string lastName;
+        decimal balance;
+        string iban;
+        ulong firstCardNumber;
+        ulong secondCardNumber;
+        ulong ThirdCardNumner;
+        }
+    }

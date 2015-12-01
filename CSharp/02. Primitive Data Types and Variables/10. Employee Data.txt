@@ -1,0 +1,32 @@
+using System;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        Console.WriteLine("Enter first name...");
+        String firstName = Console.ReadLine();
+        Console.WriteLine("Enter last name...");
+        string lastName= Console.ReadLine(); ;
+        Console.WriteLine("Enter Age...");
+        byte age = byte.Parse(Console.ReadLine());
+        Console.WriteLine("Enter Gender (m or f)...");
+        string gender = Console.ReadLine();
+        Console.WriteLine("Personal ID number...");
+        long id = long.Parse(Console.ReadLine());
+        int uniqueEmployeeNumber = 0;
+        do
+        {
+            Console.WriteLine("Enter unique employee number within scope (27560000…27569999):");
+            uniqueEmployeeNumber = int.Parse(Console.ReadLine());
+        } while (uniqueEmployeeNumber < 27560000 || uniqueEmployeeNumber > 27569999);
+
+        Console.WriteLine("First Name:{0}", firstName);
+        Console.WriteLine("Last Name:{0}", lastName);
+        Console.WriteLine("Age:{0}", age);
+        Console.WriteLine("Gender:{0}", gender);
+        Console.WriteLine("Personal ID number:{0}", id);
+        Console.WriteLine("Unique employee number:{0}", uniqueEmployeeNumber);
+    }
+    }
+

@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        for (char c = (char)033;  c <= (char)255;  c++)
+        {
+            Console.WriteLine(c);
+        }
+    }
+
+
+}
+
+

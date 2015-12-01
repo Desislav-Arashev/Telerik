@@ -1,0 +1,18 @@
+using System;
+
+namespace Float_or_Double
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			double value1 = 34.567839023d;
+			float value2 = 12.345f;
+			double value3 = 8923.1234857d;
+			float value4 = 3456.091f;
+			
+			Console.WriteLine("{0},{1},{2},{3}",value1,value2,value3,value4);
+
+		}
+	}
+}

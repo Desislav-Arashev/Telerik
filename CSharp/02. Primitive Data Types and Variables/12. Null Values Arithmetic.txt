@@ -1,0 +1,21 @@
+using System;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        int? intNull = null;
+        double? doubleNull = null;
+        Console.WriteLine("Variables with null value");
+        Console.WriteLine(intNull);
+        Console.WriteLine(doubleNull);
+
+        intNull = 3;
+        doubleNull = 3.5;
+        Console.WriteLine("Variables with asigned values");
+        Console.WriteLine(intNull);
+        Console.WriteLine(doubleNull);
+
+    }
+    }
+
