@@ -1,0 +1,24 @@
+using System;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        decimal rectangleWidth;
+        decimal rectangleHeight;
+        decimal rectanglePerimeter;
+        decimal rectangleArea;
+        Console.WriteLine("Width:");
+        rectangleWidth = decimal.Parse(Console.ReadLine());
+        Console.WriteLine("Height:");
+        rectangleHeight = decimal.Parse(Console.ReadLine());
+        rectanglePerimeter = (rectangleWidth + rectangleHeight) * 2;
+        Console.WriteLine("Perimeter: "+ rectanglePerimeter);
+        rectangleArea = rectangleWidth * rectangleHeight;
+        Console.WriteLine("Area: "+ rectangleArea);
+
+
+    }
+    }
+

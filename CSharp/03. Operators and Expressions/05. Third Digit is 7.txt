@@ -1,0 +1,14 @@
+using System;
+
+class ThirdDigitis7
+{
+    static void Main(string[] args)
+    {
+        int a = int.Parse(Console.ReadLine());
+        int b = (a / 100);
+        int c = (b % 10);
+        bool check = (c == 7);
+        Console.WriteLine(check);
+    }
+}
+

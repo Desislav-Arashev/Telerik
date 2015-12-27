@@ -1,0 +1,25 @@
+using System;
+
+
+class bitwiseExtractBit
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter Number:");
+        int number = int.Parse(Console.ReadLine());
+        int p = 3;
+        int mask = 1 << p;
+        int foundBit = mask & number;
+        Console.WriteLine(Convert.ToString(number,2).PadLeft(16,'0'));
+        if (foundBit == 0)
+        {
+            Console.WriteLine("0");
+        }
+        else
+        {
+            Console.WriteLine("1");
+        }
+    }
+}
+
+

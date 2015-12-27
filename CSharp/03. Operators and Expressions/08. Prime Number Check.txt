@@ -1,0 +1,53 @@
+using System;
+
+class primeNumberCheck
+{
+    static void Main()
+    {
+        Console.WriteLine("Enter a number: ");
+        int num = int.Parse(Console.ReadLine());
+        bool even = num % 2 == 1 ? false : true; // Checks if it is Even or Odd
+        if (even == false && num != 2 && num != 3 && num != 1)
+        {
+            double sqrtNum = Math.Sqrt(num); // Takes square root of num
+            int sqrtInt = (int)sqrtNum; //Convert Double to Int
+
+
+            for (int i = 2; i <= sqrtInt; i++)
+            {
+                int isPrime = num % i;
+                if (isPrime == 0) Console.WriteLine("It is not prime");
+                if (isPrime == 0) break;
+                if (i == sqrtInt && isPrime != 0) Console.WriteLine("Its prime");
+
+
+            }
+
+
+        }
+
+
+        else if (num == 2 || num == 3)
+        {
+            Console.WriteLine("Its prime");
+
+        }
+
+        else if (num <= 1)
+        {
+
+            Console.WriteLine("Its not prime");
+
+
+        }
+
+        else
+        {
+
+            Console.WriteLine("Its not prime");
+
+        }
+
+
+    }
+}

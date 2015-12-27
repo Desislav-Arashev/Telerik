@@ -1,0 +1,12 @@
+using System;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        Console.WriteLine("Enter weight on the Earth:");
+        float weight = float.Parse(Console.ReadLine());
+        Console.WriteLine(weight * 17 / 100);
+
+        }
+    }
