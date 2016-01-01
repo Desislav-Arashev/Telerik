@@ -1,0 +1,32 @@
+using System;
+
+
+class ModifyABitAtGivenPosition
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter Number:");
+        int number = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter Position:");
+        int position = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter Value 0 or 1");
+        int value = int.Parse(Console.ReadLine());
+
+        if (value == 1)
+        {
+            int setOne = 1 << position;
+            int foundBitOne = setOne | number;
+            Console.WriteLine(Convert.ToString(foundBitOne, 2).PadLeft(16, '0'));
+            Console.WriteLine(foundBitOne);
+        }
+        else
+        {
+            int setZero = ~(1 << position);
+            int foundBitZero = number & setZero;
+            Console.WriteLine(Convert.ToString(foundBitZero, 2).PadLeft(16, '0'));
+            Console.WriteLine(foundBitZero);
+        }
+    }
+}
+
+
