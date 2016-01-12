@@ -1,0 +1,37 @@
+using System;
+
+namespace MinMaxSumAndAverageOfNNumbers
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Number:");
+            double numbers = double.Parse(Console.ReadLine());
+            double numberValue = 0;
+            double min = double.MaxValue;
+            double max = 0;
+            double sum = 0;
+
+            for (int i = 1; i <= numbers; i++)
+            {
+                numberValue = double.Parse(Console.ReadLine());
+                sum += numberValue;
+                if (numberValue < min)
+                {
+                    min = numberValue;
+                }
+                if (numberValue > max)
+                {
+                    max = numberValue;
+                }
+
+            }
+            double avg = sum / numbers;
+            Console.WriteLine("min = {0}", min);
+            Console.WriteLine("max = {0}", max);
+            Console.WriteLine("sum = {0}", sum);
+            Console.WriteLine("avg = {0:0.00}", avg);
+        }
+    }
+}

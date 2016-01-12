@@ -1,0 +1,48 @@
+using System;
+
+
+namespace Sort3NumbersWithNestedIfs
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double firstnumber = double.Parse(Console.ReadLine());
+            double secondnumber = double.Parse(Console.ReadLine());
+            double thirdnumber = double.Parse(Console.ReadLine());
+            if (firstnumber >= secondnumber && firstnumber >= thirdnumber)
+            {
+                if (secondnumber >= thirdnumber)
+                {
+                    Console.WriteLine("{0} {1} {2}", firstnumber, secondnumber, thirdnumber);
+                }
+                else
+                {
+                    Console.WriteLine("{0} {1} {2}", firstnumber, thirdnumber, secondnumber);
+                }
+            }
+            else if (secondnumber >= firstnumber && secondnumber >= thirdnumber)
+            {
+                if (firstnumber >= thirdnumber)
+                {
+                    Console.WriteLine("{0} {1} {2}", secondnumber, firstnumber, thirdnumber);
+                }
+                else
+                {
+                    Console.WriteLine("{0} {1} {2}", secondnumber, thirdnumber, firstnumber);
+                }
+            }
+            else if (thirdnumber >= firstnumber && thirdnumber >= secondnumber)
+            {
+                if (firstnumber >= secondnumber)
+                {
+                    Console.WriteLine("{0} {1} {2}", thirdnumber, firstnumber, secondnumber);
+                }
+                else
+                {
+                    Console.WriteLine("{0} {1} {2}", thirdnumber, secondnumber, firstnumber);
+                }
+            }
+        }
+    }
+}

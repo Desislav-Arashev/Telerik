@@ -1,0 +1,50 @@
+using System;
+using System.Numerics;
+
+
+namespace CalculateNK
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter n (1<n<100):");
+            int n = int.Parse(Console.ReadLine());
+
+            while (n < 1 || n > 99)
+            {
+                Console.WriteLine("Enter n (1<n<100):");
+                n = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Enter k (1<k<n<100):");
+            int k = int.Parse(Console.ReadLine());
+            while (k >= n || k < 1 || k > 99)
+            {
+                Console.WriteLine("Enter k (1<k<n<100):");
+                k = int.Parse(Console.ReadLine());
+            }
+            BigInteger factorielN = 1;
+            BigInteger factorielK = 1;            
+            BigInteger factorielSum = 1;
+
+            int sum = n - k;
+
+            for (int i = 1; i <= n; i++)
+            {
+                factorielN *= i;
+                if (k >= i)
+                {
+                    factorielK *= i;
+                }
+
+            }
+            for (int i = 1; i <= sum; i++)
+            {
+                factorielSum *= i;
+            }
+
+            Console.WriteLine(factorielN / (factorielK*factorielSum));
+
+        }
+    }
+}

@@ -1,0 +1,17 @@
+using System;
+
+namespace SumOf5Numbers
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int inputNumber = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= inputNumber; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
+    }
+}

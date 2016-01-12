@@ -1,0 +1,27 @@
+using System;
+
+class RandomNumbersInGivenRange
+{
+    static void Main()
+    {
+        Console.WriteLine("Enter number:");
+        int n = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter min value:");
+        int min = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter max value");
+        int max = int.Parse(Console.ReadLine());
+        while (max == min)
+        {
+            Console.WriteLine("Max value must be different than min value");
+            max = int.Parse(Console.ReadLine());
+        }
+        Random rnd = new Random();
+        int rndNumber;
+
+        for (int i = 0; i <= n; i++)
+        {
+            rndNumber = rnd.Next(min, max + 1);
+            Console.Write("{0} ", rndNumber);
+        }
+    }
+}

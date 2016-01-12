@@ -1,0 +1,28 @@
+using System;
+
+
+namespace FormattingNumbers
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Number (0 - 500)");
+            int intA = int.Parse(Console.ReadLine());
+            while (intA < 0 || intA > 500)
+            {
+                Console.WriteLine("Enter Number (0 - 500)");
+                intA = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Enter floating-point");
+            float floatB = float.Parse(Console.ReadLine());
+            Console.WriteLine("Enter floating-point");
+            float floatC = float.Parse(Console.ReadLine());
+            Console.Write("{0,-10:X}|", intA);
+            Console.Write(Convert.ToString(intA, 2).PadLeft(10, '0'));
+            Console.Write("|{0,10:0.00}", floatB);
+            Console.Write("|{0,-10:0.000}| ", floatC);
+        }
+
+    }
+}

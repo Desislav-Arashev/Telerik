@@ -1,0 +1,34 @@
+using System;
+
+class OddAndEvenProduct
+{
+    static void Main()
+    {
+        string[] num = Console.ReadLine().Split();
+        
+        int even = 1;
+        int odd = 1;
+        for (int i = 0; i < num.Length; i++)
+        {
+            if (i % 2 == 0)
+            {
+                odd *= int.Parse(num[i]);
+            }
+            else
+            {
+                even *= int.Parse(num[i]);
+            }
+        }
+        if (odd == even)
+        {
+            Console.WriteLine("yes");
+            Console.WriteLine("product = {0}",odd);
+        }
+        else
+        {
+            Console.WriteLine("no");
+            Console.WriteLine("odd_product = {0}",odd);
+            Console.WriteLine("even_product = {0}",even);
+        }
+    }
+}

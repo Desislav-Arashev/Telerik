@@ -1,0 +1,25 @@
+using System;
+
+
+namespace SumOf5Numbers
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] tokens = Console.ReadLine().Split();
+            float num1 = float.Parse(tokens[0]);
+
+            float num2 = float.Parse(tokens[1]);
+
+            float num3 = float.Parse(tokens[2]);
+
+            float num4 = float.Parse(tokens[3]);
+
+            float num5 = float.Parse(tokens[4]);
+
+            Console.WriteLine({0},num1+num2+num3+num4+num5);
+        }
+
+    }
+}

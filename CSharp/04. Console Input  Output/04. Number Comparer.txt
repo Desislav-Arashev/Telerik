@@ -1,0 +1,17 @@
+using System;
+
+namespace NumberComparer
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Number:");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Number:");
+            int num2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Greater is:{0}", Math.Max(num1, num2));
+        }
+    }
+}
