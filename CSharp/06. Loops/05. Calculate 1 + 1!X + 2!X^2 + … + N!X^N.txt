@@ -1,0 +1,25 @@
+using System;
+
+class CalculateFacturial
+{
+    static void Main()
+    {
+        {
+            Console.WriteLine("Enter Number...");
+            double n = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Number...");
+            double x = double.Parse(Console.ReadLine());
+            double fact = 1;
+            double divisor = 1;
+            double result = 1;
+            for (double i = 1; i <= n; i++)
+            {
+                fact *= i;
+                divisor *= x;
+                result += fact / divisor;
+                
+            }
+            Console.WriteLine("Result is:{0:F5}",result);
+        }
+    }
+}

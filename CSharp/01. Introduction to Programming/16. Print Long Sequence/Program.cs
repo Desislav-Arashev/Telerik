@@ -10,15 +10,15 @@ namespace Print_a_Sequence
     {
         static void Main(string[] args)
         {
-            for (int i = 2; i < 1001; i++)
+            for (int i = 2; i <= 1001; i++)
             {
                 if (IsOdd(i))
                 {
-                    Console.Write(-i + ",");
+                    Console.WriteLine(-i);
                 }
                 else
                 {
-                    Console.Write(i + ",");
+                    Console.WriteLine(i);
                 }
             }
         }

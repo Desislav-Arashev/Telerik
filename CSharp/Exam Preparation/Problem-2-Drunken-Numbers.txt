@@ -1,0 +1,106 @@
+using System;
+
+
+namespace DrunkenNumbers
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // input data
+            
+            int numberOfRounds = int.Parse(Console.ReadLine());            
+            int currentNumber;
+            int checkEven;
+            int isEven;            
+            int tenth = 10;
+            int vladko;
+            int mitko;
+            int mitkoValue = 0;
+            int vladkoValue = 0;
+            string N = string.Empty;
+            string stringNumber;
+
+
+            //number of rounds
+            for (int i = 0; i < numberOfRounds; i++)
+            {
+                tenth = 10;
+                currentNumber = int.Parse(Console.ReadLine());
+
+                // negative numbers to positive
+                if (currentNumber <0)
+                {
+                    currentNumber *= -1;
+                }
+
+                stringNumber = Convert.ToString(currentNumber);
+                checkEven = stringNumber.Length;
+                isEven = checkEven % 2;
+
+                if (isEven == 0)
+                {
+                    checkEven /= 2;
+
+                    for (int u = 1; u < checkEven; u++)
+                    {
+                        tenth *= 10;
+                    }
+
+                    vladko = currentNumber % tenth;
+                    mitko = currentNumber / tenth;
+                    for (int q = 0; q < checkEven; q++)
+                    {
+                        int currentVladko = vladko % 10;
+                        vladko = vladko / 10;
+                        vladkoValue += currentVladko;
+                        int currentMitko = mitko % 10;
+                        mitko = mitko / 10;
+                        mitkoValue += currentMitko;
+                    }
+
+                }
+                else
+                {
+                    tenth = 10;
+                    checkEven /= 2;
+
+                    for (int u = 1; u <= checkEven; u++)
+                    {
+                        tenth *= 10;
+                    }
+
+                    vladko = currentNumber % tenth;
+                    mitko = currentNumber / (tenth / 10);
+                    for (int q = 0; q < checkEven + 1; q++)
+                    {
+                        int currentVladko = vladko % 10;
+                        vladko = vladko / 10;
+                        vladkoValue += currentVladko;
+                        int currentMitko = mitko % 10;
+                        mitko = mitko / 10;
+                        mitkoValue += currentMitko;
+                    }
+
+                }
+
+            }
+            //output
+            if (mitkoValue > vladkoValue)
+            {
+                mitkoValue -= vladkoValue;
+                Console.WriteLine("M {0}", mitkoValue);
+            }
+            else if (vladkoValue > mitkoValue)
+            {
+                vladkoValue -= mitkoValue;
+                Console.WriteLine("V {0}", vladkoValue);
+            }
+            else if (mitkoValue == vladkoValue)
+            {
+                Console.WriteLine("No {0}", mitkoValue + vladkoValue);
+            }
+
+        }
+    }
+}

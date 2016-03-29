@@ -1,0 +1,45 @@
+using System;
+using System.Globalization;
+using System.Threading;
+
+namespace CoffeeVendingMachine
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Ensure the decimal separator is ".", not "," or any other
+            Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+
+            // Read input
+            int N1 = int.Parse(Console.ReadLine());
+            int N2 = int.Parse(Console.ReadLine());
+            int N3 = int.Parse(Console.ReadLine());
+            int N4 = int.Parse(Console.ReadLine());
+            int N5 = int.Parse(Console.ReadLine());
+            double amountOfMoney = double.Parse(Console.ReadLine());
+            double priceOfTheDrink = double.Parse(Console.ReadLine());           
+
+            double moneyInTrays = (N1 * 0.05) + (N2 * 0.10) + (N3 * 0.20) + (N4 * 0.50) + (N5 * 1);
+
+            //Check possible cases
+            if (amountOfMoney >= priceOfTheDrink && moneyInTrays >= amountOfMoney - priceOfTheDrink)
+            {
+                double yes = moneyInTrays - (amountOfMoney - priceOfTheDrink);
+
+                Console.WriteLine("Yes {0:F2}",yes);              
+            }
+            if (amountOfMoney < priceOfTheDrink)
+            {
+                double more = priceOfTheDrink - amountOfMoney;
+                Console.WriteLine("More {0:F2}",more);
+            }
+            if (amountOfMoney > priceOfTheDrink && moneyInTrays < amountOfMoney - priceOfTheDrink)
+            {
+                double no = (amountOfMoney - (moneyInTrays + priceOfTheDrink));
+                Console.WriteLine("No {0:F2}", no);
+            }
+
+        }
+    }
+}

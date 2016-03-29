@@ -1,0 +1,180 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Bulls_And_Cows
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int secretNumber = int.Parse(Console.ReadLine());
+            int bulls = int.Parse(Console.ReadLine());
+            int cows = int.Parse(Console.ReadLine());
+            bool foundNumber = false;
+            for (int i = 1000; i <= 9999; i++)
+            {
+                int currentBulls = 0;
+                int currentCows = 0;
+                int guessNumber = i;
+                int tempSecret = secretNumber;
+                int tempGuess = guessNumber;
+
+
+                int guessD = tempGuess % 10;
+                tempGuess /= 10;
+                int guessC = tempGuess % 10;
+                tempGuess /= 10;
+                int guessB = tempGuess % 10;
+                tempGuess /= 10;
+                int guessA = tempGuess % 10;
+                if (guessA == 0 || guessB == 0 || guessC == 0 || guessD == 0)
+                {
+                    continue;
+                }
+                int secretD = tempSecret % 10;
+                tempSecret /= 10;
+                int secretC = tempSecret % 10;
+                tempSecret /= 10;
+                int secretB = tempSecret % 10;
+                tempSecret /= 10;
+                int secretA = tempSecret % 10;
+                tempSecret /= 10;
+
+                #region Bulls
+                if (guessA == secretA)
+                {
+                    currentBulls++;
+                    guessA = -1;
+                    secretA = -2;
+                }
+
+                if (guessB == secretB)
+                {
+                    currentBulls++;
+                    guessB = -1;
+                    secretB = -2;
+                }
+
+                if (guessC == secretC)
+                {
+                    currentBulls++;
+                    guessC = -1;
+                    secretC = -2;
+                }
+
+                if (guessD == secretD)
+                {
+                    currentBulls++;
+                    guessD = -1;
+                    secretD = -2;
+                }
+                #endregion
+
+                #region GuessA
+                if (guessA == secretB)
+                {
+                    currentCows++;
+                    guessA = -1;
+                    secretB = -2;
+                }
+
+                if (guessA == secretC)
+                {
+                    currentCows++;
+                    guessA = -1;
+                    secretC = -2;
+                }
+                if (guessA == secretD)
+                {
+                    currentCows++;
+                    guessA = -1;
+                    secretD = -2;
+                }
+                #endregion
+
+                #region GuessB
+                if (guessB == secretA)
+                {
+                    currentCows++;
+                    guessB = -1;
+                    secretA = -2;
+                }
+
+                if (guessB == secretC)
+                {
+                    currentCows++;
+                    guessB = -1;
+                    secretC = -2;
+                }
+                if (guessB == secretD)
+                {
+                    currentCows++;
+                    guessB = -1;
+                    secretD = -2;
+                }
+                #endregion
+
+                #region GuessC
+                if (guessC == secretA)
+                {
+                    currentCows++;
+                    guessC = -1;
+                    secretA = -2;
+                }
+
+                if (guessC == secretB)
+                {
+                    currentCows++;
+                    guessC = -1;
+                    secretB = -2;
+                }
+                if (guessC == secretD)
+                {
+                    currentCows++;
+                    guessC = -1;
+                    secretD = -2;
+                }
+                #endregion
+
+                #region GuessD
+                if (guessD == secretA)
+                {
+                    currentCows++;
+                    guessD = -1;
+                    secretA = -2;
+                }
+
+                if (guessD == secretB)
+                {
+                    currentCows++;
+                    guessD = -1;
+                    secretB = -2;
+                }
+                if (guessD == secretC)
+                {
+                    currentCows++;
+                    guessD = -1;
+                    secretC = -2;
+                }
+                #endregion
+
+
+
+                if (currentBulls == bulls && currentCows == cows)
+                {
+                    foundNumber = true;
+                    Console.Write("{0} ", guessNumber);
+                }
+                
+
+            }
+            if (!foundNumber)
+            {
+                Console.WriteLine("No");
+            }
+        }
+    }
+}
