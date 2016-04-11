@@ -1,13 +1,15 @@
 using System;
 
-namespace SumOf5Numbers
+
+namespace Sum_of_5_numbers
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int inputNumber = int.Parse(Console.ReadLine());
-            for (int i = 1; i <= inputNumber; i++)
+            int number = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= number; i++)
             {
                 Console.WriteLine(i);
             }

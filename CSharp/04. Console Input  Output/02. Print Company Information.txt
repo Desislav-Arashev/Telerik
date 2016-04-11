@@ -1,68 +1,36 @@
 using System;
 
-namespace PrintCompanyInformation
+
+namespace Company_info
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Company name:");
             string companyName = Console.ReadLine();
-            if (companyName == "")
-            {
-                companyName = "(No company name)";
-            }
-            Console.WriteLine("Company address:");
             string companyAdress = Console.ReadLine();
-            if (companyAdress == "")
-            {
-                companyAdress = "(No company adress)";
-            }
-            Console.WriteLine("Phone number:");
             string phoneNumber = Console.ReadLine();
-            if (phoneNumber == "")
-            {
-                phoneNumber = "(No phone)";
-            }
-            Console.WriteLine("Fax number:");
             string faxNumber = Console.ReadLine();
+            string webSite = Console.ReadLine();
+            string managerFirstName = Console.ReadLine();
+            string managerLastName = Console.ReadLine();
+            string managerAge = Console.ReadLine();
+            string managerPhone = Console.ReadLine();
+
+            Console.WriteLine(companyName);
+            Console.WriteLine("Address: {0}", companyAdress);
+            Console.WriteLine("Tel. {0}", phoneNumber);
             if (faxNumber == "")
             {
-                faxNumber = "(No fax)";
+                Console.WriteLine("Fax: (no fax)");
             }
-            Console.WriteLine("Web site:");
-            string webSite = Console.ReadLine();
-            if (webSite == "")
+            else
             {
-                webSite = "(No website)";
+                Console.WriteLine("Fax: {0}", faxNumber);
             }
-            Console.WriteLine("Manager first name:");
-            string managerFirstName = Console.ReadLine();
-            if (managerFirstName == "")
-            {
-                managerFirstName = "(No first name)";
-            }
-            Console.WriteLine("Manager last name:");
-            string managerLastName = Console.ReadLine();
-            if (managerLastName == "")
-            {
-                managerLastName = "(No last name)";
-            }
-            Console.WriteLine("Manager age:");
-            string managerAge = Console.ReadLine();
-            if (managerAge == "")
-            {
-                managerAge = "(No age)";
-            }
-            Console.WriteLine("Manager phone:");
-            string managerPhone = Console.ReadLine();
-            if (managerPhone == "")
-            {
-                managerPhone = "(No phone)";
-            }
-
-            Console.WriteLine("{0}\nAddress: {1}\nTel. {2}\nFax: {3}\nWeb Site: {4}\nManager: {5} {6} (age: {7}, tel. {8}) ",
-                companyName, companyAdress, phoneNumber, faxNumber, webSite, managerFirstName, managerLastName, managerAge, managerPhone);
+            Console.WriteLine("Web site: {0}",webSite);
+            Console.WriteLine("Manager: {0} {1} (age: {2}, tel. {3})",managerFirstName,managerLastName,managerAge,managerPhone);
+            
         }
     }
 }

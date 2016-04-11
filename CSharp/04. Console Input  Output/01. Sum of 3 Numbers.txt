@@ -1,17 +1,17 @@
 using System;
 
-namespace Sumof3Numbers
+
+namespace Sum_of_3_numbers
 {
     class Program
     {
         static void Main(string[] args)
         {
+            int numberA = int.Parse(Console.ReadLine());
+            int numberB = int.Parse(Console.ReadLine());
+            int numberC = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Write 3 real numbers :");
-            double firstNumber = double.Parse(Console.ReadLine());
-            double secondNumber = double.Parse(Console.ReadLine());
-            double thirdNumber = double.Parse(Console.ReadLine());
-            Console.WriteLine("The sum of numbers is : {0}", firstNumber + secondNumber + thirdNumber);
+            Console.WriteLine(numberA + numberB + numberC);
 
         }
     }

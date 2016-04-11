@@ -1,22 +1,25 @@
 using System;
 
-namespace SumOfNNumbers
+
+namespace Interval
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int start = int.Parse(Console.ReadLine());
-            int end = int.Parse(Console.ReadLine());
-            int p= 0; 
-            for (int i = start; i <= end ; i++)
+            int firstNumber = int.Parse(Console.ReadLine());
+            int secondNumber = int.Parse(Console.ReadLine());
+            int amountOfNumbers = 0;
+
+            for (int i = firstNumber + 1; i < secondNumber; i++)
             {
-                if (i%5==0)
+                if (i %5==0)
                 {
-                    p++;
+                    amountOfNumbers++;
                 }
             }
-            Console.WriteLine(p);
+            Console.WriteLine(amountOfNumbers);
+            
         }
     }
 }

@@ -1,24 +1,19 @@
 using System;
 
 
-namespace SumOf5Numbers
+namespace Sum_of_5_numbers
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string[] tokens = Console.ReadLine().Split();
-            float num1 = float.Parse(tokens[0]);
+            int num1= int.Parse(Console.ReadLine());
+            int num2= int.Parse(Console.ReadLine());
+            int num3= int.Parse(Console.ReadLine());
+            int num4= int.Parse(Console.ReadLine());
+            int num5= int.Parse(Console.ReadLine());
 
-            float num2 = float.Parse(tokens[1]);
-
-            float num3 = float.Parse(tokens[2]);
-
-            float num4 = float.Parse(tokens[3]);
-
-            float num5 = float.Parse(tokens[4]);
-
-            Console.WriteLine({0},num1+num2+num3+num4+num5);
+            Console.WriteLine(num1+num2+num3+num4+num5);
         }
 
     }

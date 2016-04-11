@@ -1,15 +1,24 @@
 using System;
 
-class pointInACircle
+class Point_In_A_Circle
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("x =");
-        double x = double.Parse(Console.ReadLine());
-        Console.WriteLine("y =");
+        double x = double.Parse(Console.ReadLine());         
         double y = double.Parse(Console.ReadLine());
         double d = (x * x) + (y * y);
-        bool isInside = (x * x) + (y * y) <= (2 * 2);
-        Console.WriteLine("Coordinates are inside the circle : " + isInside);
+        bool isInside = d <= 4;
+
+        if (isInside==true)
+        {
+            Console.Write("yes ");
+        }
+
+        else
+        {
+            Console.Write("no ");
+        }
+
+        Console.Write("{0:F2}" ,Math.Sqrt(d));
     }
 }

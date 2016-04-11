@@ -1,0 +1,22 @@
+using System;
+
+
+namespace Printing
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            decimal number = decimal.Parse(Console.ReadLine());
+            decimal sheetsOfPaperEach = decimal.Parse(Console.ReadLine());
+            decimal price = decimal.Parse(Console.ReadLine());
+            decimal realm = 500;
+            decimal sheetsOfPaper = number * sheetsOfPaperEach;
+            decimal reams = sheetsOfPaper / realm;
+            decimal result = reams * price;
+            Console.WriteLine("{0:F2}",result);
+            
+
+        }
+    }
+}
