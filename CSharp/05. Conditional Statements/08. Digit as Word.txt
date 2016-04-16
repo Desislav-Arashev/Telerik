@@ -1,14 +1,14 @@
 using System;
 
 
-namespace DigitAsWord
+namespace Digit_as_Word
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string digit = Console.ReadLine();
-            switch (digit)
+            string input = Console.ReadLine();
+            switch (input)
             {
                 case "0":
                     Console.WriteLine("zero");
@@ -23,7 +23,7 @@ namespace DigitAsWord
                     Console.WriteLine("three");
                     break;
                 case "4":
-                    Console.WriteLine("fourth");
+                    Console.WriteLine("four");
                     break;
                 case "5":
                     Console.WriteLine("five");
@@ -40,6 +40,7 @@ namespace DigitAsWord
                 case "9":
                     Console.WriteLine("nine");
                     break;
+
                 default:
                     Console.WriteLine("not a digit");
                     break;
@@ -47,3 +48,4 @@ namespace DigitAsWord
         }
     }
 }
+

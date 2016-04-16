@@ -1,24 +1,22 @@
 using System;
 
 
-namespace ExchangeIfGreater
+namespace Exchange_numbers
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter first number value");
-            double firstValue = double.Parse(Console.ReadLine());
-            Console.WriteLine("Enter first number value");
-            double secondValue = double.Parse(Console.ReadLine());
-            if (firstValue <= secondValue)
-            {
-                Console.WriteLine("{0} {1}", firstValue, secondValue);
-            }
+            decimal a = decimal.Parse(Console.ReadLine());
+            decimal b = decimal.Parse(Console.ReadLine());
 
+            if (a>b)
+            {
+                Console.WriteLine("{0} {1}",b,a);
+            }
             else
             {
-                Console.WriteLine("{0} {1}", secondValue, firstValue);
+                Console.WriteLine("{0} {1}",a,b);
             }
         }
     }

@@ -1,42 +1,32 @@
 using System;
-
-
-namespace CalculateNK
+using System.Numerics;
+namespace Calculate_Again
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter n (1<n<100):");
             int n = int.Parse(Console.ReadLine());
-
-            while (n < 1 || n > 99)
-            {
-                Console.WriteLine("Enter n (1<n<100):");
-                n = int.Parse(Console.ReadLine());
-            }
-            Console.WriteLine("Enter k (1<k<n<100):");
             int k = int.Parse(Console.ReadLine());
-            while (k >= n || k < 1 || k > 99)
-            {
-                Console.WriteLine("Enter k (1<k<n<100):");
-                k = int.Parse(Console.ReadLine());
-            }
-            int factorielN = 1;
-            int factorielK = 1;
+            BigInteger fact = 1;
 
-            for (int i = 1; i <= n; i++)
+            BigInteger numN = n;
+            BigInteger numK = k;
+            for (int i = 1; i <= Math.Max(n,k); i++)
             {
-                factorielN *= i;
-                if (k >= i)
+                fact *= i;
+                if (n>=i)
                 {
-                    factorielK *= i;
+                   numN = fact;
                 }
-
+                if (k>=i)
+                {
+                    numK = fact;
+                }
+                
             }
-
-            Console.WriteLine(factorielN / factorielK);
-
+            BigInteger result = numN / numK;
+            Console.WriteLine(result);
         }
     }
 }

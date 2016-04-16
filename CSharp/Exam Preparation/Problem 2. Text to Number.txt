@@ -1,0 +1,44 @@
+using System;
+
+
+namespace Text_to_Number
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int module = int.Parse(Console.ReadLine());
+            string text = Console.ReadLine();
+            int currentnumber = 0;
+            long result = 0;
+            while (true)
+            {
+                char currentchar = text[currentnumber];
+                if (currentchar == '@')
+                {
+                    Console.WriteLine(result);
+                    return;
+                }
+                else if ((int)currentchar >= (int)'0' && (int)currentchar <= (int)'9')
+                {
+                    result *= currentchar - 48;
+                }
+                else if ((int)currentchar >= (int)'A' && currentchar <= (int)'Z')
+                {
+                    result += (int)currentchar - 65;
+                }
+                else if ((int)currentchar >= (int)'a' && (int)currentchar <= (int)'z')
+                {
+                    result += (int)currentchar - 97;
+                }
+
+                else
+                {
+                    result %= module;
+                }
+                currentnumber++;
+
+            }
+        }
+    }
+}

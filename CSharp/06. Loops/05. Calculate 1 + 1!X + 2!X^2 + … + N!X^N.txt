@@ -1,25 +1,23 @@
 using System;
-
-class CalculateFacturial
+using System.Numerics;
+namespace Print_a_Deck
 {
-    static void Main()
+    class Program
     {
+        static void Main(string[] args)
         {
-            Console.WriteLine("Enter Number...");
-            double n = double.Parse(Console.ReadLine());
-            Console.WriteLine("Enter Number...");
+            int N = int.Parse(Console.ReadLine());
             double x = double.Parse(Console.ReadLine());
-            double fact = 1;
+            int fact = 1;
+            double sum = 1;
             double divisor = 1;
-            double result = 1;
-            for (double i = 1; i <= n; i++)
+            for (int i = 1; i <= N; i++)
             {
                 fact *= i;
-                divisor *= x;
-                result += fact / divisor;
-                
+                divisor = Math.Pow(x, i);
+                sum += fact / divisor;
             }
-            Console.WriteLine("Result is:{0:F5}",result);
+            Console.WriteLine("{0:F5}",sum);
         }
     }
 }

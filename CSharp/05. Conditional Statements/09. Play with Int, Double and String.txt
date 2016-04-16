@@ -1,42 +1,32 @@
 using System;
 
 
-namespace PlayWithIntDoubleAndString
+namespace Int_Double_String
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please choose a type:");
-            Console.WriteLine("1 --> int");
-            Console.WriteLine("2 --> double");
-            Console.WriteLine("3 --> string");
-            int chosenNumber = int.Parse(Console.ReadLine());
-            while (chosenNumber < 1 || chosenNumber > 3)
+            string readInput = Console.ReadLine();
+
+            if (readInput == "integer")
             {
-                chosenNumber = byte.Parse(Console.ReadLine());
+                int number = int.Parse(Console.ReadLine());
+                number += 1;
+                Console.WriteLine(number);
             }
-            switch (chosenNumber)
+            else if (readInput == "real")
             {
-                case 1:
-                    Console.WriteLine("Please enter a int:");
-                    int intValue = int.Parse(Console.ReadLine());
-                    Console.WriteLine(intValue + 1);
-                    break;
-                case 2:
-                    Console.WriteLine("Please enter a double:");
-                    double doubleValue = double.Parse(Console.ReadLine());
-                    Console.WriteLine(doubleValue + 1);
-                    break;
-                case 3:
-                    Console.WriteLine("Please enter a string:");
-                    string stringValue = Console.ReadLine();
-                    Console.WriteLine("{0}*", stringValue);
-                    break;
-                default:
-                    Console.WriteLine("Invalid");
-                    break;
+                double real = double.Parse(Console.ReadLine());
+                real += 1;
+                Console.WriteLine("{0:F2}", real);
+            }
+            else if (readInput == "text")
+            {
+                string text = Console.ReadLine();
+                Console.WriteLine("{0}*", text);
             }
         }
     }
 }
+

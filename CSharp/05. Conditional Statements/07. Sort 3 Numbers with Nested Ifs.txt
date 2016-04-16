@@ -1,48 +1,52 @@
 using System;
 
 
-namespace Sort3NumbersWithNestedIfs
+namespace Sort_3_Numbers
 {
     class Program
     {
         static void Main(string[] args)
         {
-            double firstnumber = double.Parse(Console.ReadLine());
-            double secondnumber = double.Parse(Console.ReadLine());
-            double thirdnumber = double.Parse(Console.ReadLine());
-            if (firstnumber >= secondnumber && firstnumber >= thirdnumber)
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+
+            if (a >= b && a >= c)
             {
-                if (secondnumber >= thirdnumber)
+                if (b >= c)
                 {
-                    Console.WriteLine("{0} {1} {2}", firstnumber, secondnumber, thirdnumber);
+                    Console.WriteLine("{0} {1} {2}", a, b, c);
                 }
-                else
+                else if (b <= c)
                 {
-                    Console.WriteLine("{0} {1} {2}", firstnumber, thirdnumber, secondnumber);
+                    Console.WriteLine("{0} {1} {2}", a, c, b);
+                }
+
+            }
+            else if (b >=a && b>=c )
+            {
+                if (a >= c)
+                {
+                    Console.WriteLine("{0} {1} {2}", b, a, c);
+                }
+                else if (a <= c)
+                {
+                    Console.WriteLine("{0} {1} {2}", b, c, a);
                 }
             }
-            else if (secondnumber >= firstnumber && secondnumber >= thirdnumber)
+            else if (c>=a && c >=b)
             {
-                if (firstnumber >= thirdnumber)
+                if (a >= b)
                 {
-                    Console.WriteLine("{0} {1} {2}", secondnumber, firstnumber, thirdnumber);
+                    Console.WriteLine("{0} {1} {2}", c, a, b);
                 }
-                else
+                else if (a <= b)
                 {
-                    Console.WriteLine("{0} {1} {2}", secondnumber, thirdnumber, firstnumber);
-                }
-            }
-            else if (thirdnumber >= firstnumber && thirdnumber >= secondnumber)
-            {
-                if (firstnumber >= secondnumber)
-                {
-                    Console.WriteLine("{0} {1} {2}", thirdnumber, firstnumber, secondnumber);
-                }
-                else
-                {
-                    Console.WriteLine("{0} {1} {2}", thirdnumber, secondnumber, firstnumber);
+                    Console.WriteLine("{0} {1} {2}", c, b, a);
                 }
             }
         }
+
+        }
     }
-}
+

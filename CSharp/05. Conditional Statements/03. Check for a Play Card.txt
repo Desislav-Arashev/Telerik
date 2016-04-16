@@ -1,15 +1,14 @@
 using System;
 
 
-namespace CheckForAPlayCard
+namespace Play_card
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter card:");
-            string card = Console.ReadLine();
-            switch (card)
+            string content = Console.ReadLine();
+            switch (content)
             {
                 case "2":
                 case "3":
@@ -24,10 +23,10 @@ namespace CheckForAPlayCard
                 case "Q":
                 case "K":
                 case "A":
-                    Console.WriteLine("yes");
+                    Console.WriteLine("yes {0}",content);
                     break;
                 default:
-                    Console.WriteLine("no");
+                    Console.WriteLine("no {0}",content);
                     break;
             }
         }
