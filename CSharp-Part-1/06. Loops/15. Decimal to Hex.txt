@@ -1,0 +1,77 @@
+using System;
+using System.Numerics;
+class Program
+{
+    static void Main()
+    {
+        long n = long.Parse(Console.ReadLine());
+        long firstDigit = 0;
+        long resultn = 0;
+        long result = 0;
+        string strResult = string.Empty;
+        
+        while (n > 15)
+        {
+
+            resultn = n / 16;
+            result = n - (resultn * 16);
+            n = resultn;
+            
+            switch (result)
+            {
+                case 10:
+                    strResult = "A" + strResult;
+                    break;
+                case 11:
+                    strResult = "B" + strResult;
+                    break;
+                case 12:
+                    strResult = "C" + strResult;
+                    break;
+                case 13:
+                    strResult = "D" + strResult;
+                    break;
+                case 14:
+                    strResult = "E" + strResult;
+                    break;
+                case 15:
+                    strResult = "F" + strResult;
+                    break;
+                default:
+                    strResult = result + strResult;
+                    break;
+            }
+
+        }
+        
+            firstDigit = n;
+
+        
+        switch (firstDigit)
+        {
+            case 10:
+                Console.WriteLine("A" + strResult); ;
+                break;
+            case 11:
+                Console.WriteLine("B" + strResult); ;
+                break;
+            case 12:
+                Console.WriteLine("C" + strResult); ;
+                break;
+            case 13:
+                Console.WriteLine("D" + strResult); ;
+                break;
+            case 14:
+                Console.WriteLine("E" + strResult); ;
+                break;
+            case 15:
+                Console.WriteLine("F" + strResult); ;
+                break;
+            default:
+                Console.WriteLine(firstDigit + strResult);
+                break;
+
+        }
+
+    }
+}

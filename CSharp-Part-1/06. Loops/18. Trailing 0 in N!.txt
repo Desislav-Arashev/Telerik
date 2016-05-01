@@ -1,0 +1,19 @@
+using System;
+namespace Trailing_0_in_N
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            int zeroes = 0;
+            while (n>0)
+            {
+                 zeroes += n / 5;
+                n /= 5;
+            }
+            Console.WriteLine(zeroes);
+
+        }
+    }
+}

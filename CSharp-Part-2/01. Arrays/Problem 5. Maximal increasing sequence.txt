@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+
+namespace Problem_5.Maximal_increasing_sequence
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter array length:");
+            int arrLength = int.Parse(Console.ReadLine());
+            int[] array = new int[arrLength];
+
+            int count = 1;
+            int countMax = 1
+                ;
+
+            for (int i = 0; i < arrLength; i++)
+            {
+                Console.WriteLine("Enter number:");
+                array[i] = int.Parse(Console.ReadLine());
+
+                if (i>0)
+                {
+                    if (array[i-1] < array[i])
+                    {
+                        count++;
+
+                        if (count > countMax)
+                        {
+                            countMax = count;
+                        }
+                    }
+                    else
+                    {
+                        count = 1;
+                    }
+                }
+            }
+            Console.WriteLine(countMax);
+        }
+    }
+}

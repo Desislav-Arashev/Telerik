@@ -1,0 +1,31 @@
+using System;
+using System.Numerics;
+namespace Calculate_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            BigInteger nFact = 1;
+            BigInteger nFactPlus = 1;
+            BigInteger nFactMul = 1;
+
+            for (int i = 1; i <= n*2; i++)
+            {
+                nFactMul *= i;
+            }
+            for (int i = 1; i <= n+1; i++)
+            {
+                nFactPlus *= i;
+            }
+            for (int i = 1; i <= n; i++)
+            {
+                nFact *= i;
+
+            }
+            BigInteger result = nFactMul / (nFactPlus * nFact);
+            Console.WriteLine(result);
+        }
+    }
+}

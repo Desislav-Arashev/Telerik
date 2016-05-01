@@ -1,0 +1,22 @@
+using System;
+using System.Numerics;
+namespace Matrix_of_Numbers
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+
+            for (int row = 1; row <=n ; row++)
+            {
+                Console.Write("{0} ",row);
+                for (int cow = row+1; cow < row+n; cow++)
+                {
+                    Console.Write("{0} ",cow);
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}

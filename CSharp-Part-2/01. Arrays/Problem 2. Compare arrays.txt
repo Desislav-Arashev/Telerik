@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+
+namespace Allocate_array
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool compare = true;
+            int arrOneLenght = int.Parse(Console.ReadLine());
+            int[] arrOne = new int[arrOneLenght];
+            for (int i = 0; i < arrOneLenght; i++)
+            {
+                arrOne[i] = int.Parse(Console.ReadLine());
+            }
+            int arrTwoLenght = int.Parse(Console.ReadLine());
+            
+            int[] arrTwo = new int[arrTwoLenght];
+            for (int i = 0; i < arrTwoLenght; i++)
+            {
+                arrTwo[i] = int.Parse(Console.ReadLine());
+            }
+            if (arrOneLenght != arrTwoLenght)
+            {
+                compare = false;
+                Console.WriteLine(compare);
+                return;
+            }
+
+            for (int i = 0; i < arrOneLenght; i++)
+            {
+                if (arrOne[i] != arrTwo[i])
+                {
+                    compare = false;
+                    Console.WriteLine(compare);
+                    return;
+                }
+            }
+            Console.WriteLine(compare);
+        }
+    }
+}

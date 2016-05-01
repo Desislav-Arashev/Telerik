@@ -1,0 +1,22 @@
+using System;
+
+namespace GCD
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] numAandB = Console.ReadLine().Split();
+            int a = Math.Abs(int.Parse(numAandB[0]));
+            int b = Math.Abs(int.Parse(numAandB[1]));
+            int reminder = 0;
+            while (a != 0 && b != 0)
+            {
+                reminder = a % b;
+                a = b;
+                b = reminder;
+            }
+            Console.WriteLine(a);
+        }
+    }
+}

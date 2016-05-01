@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+
+namespace Selection_sort
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Write length of array:");
+            int minnumber = int.MaxValue;
+            int arrLength = int.Parse(Console.ReadLine());
+            List<int> array = new List<int>();
+            List<int> sortedArray = new List<int>();
+            for (int i = 0; i < arrLength; i++)
+            {
+                array.Add(int.Parse(Console.ReadLine()));
+            }
+            for (int j = 0; j < arrLength; j++)
+            {
+                for (int i = 0; i < arrLength - j; i++)
+                {
+                    if (array[i] < minnumber)
+                    {
+                        minnumber = array[i];
+                    }
+                }
+                sortedArray.Add(minnumber);
+                array.Remove(minnumber);
+                minnumber = int.MaxValue;
+            }
+            for (int i = 0; i < arrLength; i++)
+            {
+                Console.WriteLine("{0} ", sortedArray[i]);
+            }
+        }
+    }
+}

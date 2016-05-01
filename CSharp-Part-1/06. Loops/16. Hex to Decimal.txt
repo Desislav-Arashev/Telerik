@@ -1,0 +1,46 @@
+using System;
+using System.Numerics;
+
+namespace Hex_to_Decimal
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string number = Console.ReadLine();
+             BigInteger result = 0;
+            for (int i = 0; i < number.Length; i++)
+            {
+                char currentDigit = number[number.Length - i - 1];
+                int currentNum =0;
+                switch (currentDigit)
+                {
+                    case 'A':
+                        currentNum = 10;
+                        break;
+                    case 'B':
+                        currentNum = 11;
+                        break;
+                    case 'C':
+                        currentNum = 12;
+                        break;
+                    case 'D':
+                        currentNum = 13;
+                        break;
+                    case 'E':
+                        currentNum = 14;
+                        break;
+                    case 'F':
+                        currentNum = 15;
+                        break;
+                    default:
+                        currentNum = currentDigit-'0';
+                        break;
+                }
+                result += (BigInteger)(currentNum * Math.Pow(16,i));
+               
+            }
+            Console.WriteLine(result);
+        }
+    }
+}

@@ -1,0 +1,21 @@
+using System;
+
+
+namespace A_B_and_C
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            decimal a = decimal.Parse(Console.ReadLine());
+            decimal b = decimal.Parse(Console.ReadLine());
+            decimal c = decimal.Parse(Console.ReadLine());
+
+            decimal arithmeticMean = ((a + b + c) / 3);
+
+            Console.WriteLine(Math.Max(a, (Math.Max(b, c))));
+            Console.WriteLine(Math.Min(a, (Math.Min(b, c))));
+            Console.WriteLine("{0:F3}",arithmeticMean);
+        }
+    }
+}

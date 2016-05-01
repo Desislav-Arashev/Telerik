@@ -1,0 +1,33 @@
+using System;
+using System.Numerics;
+
+class OddAndEvenProduct
+{
+    static void Main()
+    {
+        int n = int.Parse(Console.ReadLine());
+        BigInteger even = 1;
+        BigInteger odd = 1;
+        string[] num = Console.ReadLine().Split();
+        for (int i = 0; i < n; i++)
+        {
+            if (i%2==0)
+            {
+                even *= Convert.ToInt32(num[i]);
+            }
+            else
+            {
+                odd *= Convert.ToInt32(num[i]);
+            }
+        }
+
+        if (even == odd)
+        {
+            Console.WriteLine("yes {0}",even);
+        }
+        else
+        {
+            Console.WriteLine("no {0} {1}",even,odd);
+        }
+    }
+}
