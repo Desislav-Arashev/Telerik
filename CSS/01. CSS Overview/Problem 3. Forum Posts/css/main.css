@@ -1,0 +1,38 @@
+body{
+  background-color: #AAA;
+}
+body > header > h1{
+  color:white;
+  text-align: center;
+  font-size: 45px;
+}
+h1{
+  color: white;
+  font-size: 30px;
+}
+nav{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+a{
+  text-decoration: none;
+    color: white;
+}
+li{
+  list-style-type: none;
+}
+li:nth-last-child(1){
+  text-decoration: underline;
+  color: white;
+}
+.current{
+  background-color: #ccc
+}
+p>a{
+    color: black;
+}
+section + footer{
+  text-align: center;
+}

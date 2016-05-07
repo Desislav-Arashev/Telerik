@@ -1,37 +1,31 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Maximal_increasing_sequence
+namespace Compare_char_arrays
 {
     class Program
     {
         static void Main(string[] args)
         {
-            bool compare = true;
-            Console.WriteLine("Write first char array:");
-            string[] arrayOne = Console.ReadLine().Split(',');
+            string value1 = Console.ReadLine();
+            string value2 = Console.ReadLine();
 
-            Console.WriteLine("Write second char array:");
-            string[] arrayTwo = Console.ReadLine().Split(',');
-            if (arrayOne.Length == arrayTwo.Length)
+            int compare = value1.CompareTo(value2);
+
+            if (compare == -1)
             {
-                for (int i = 0; i < arrayOne.Length; i++)
-                {
-                    Console.WriteLine("{0}-=-{1}",arrayOne[i],arrayTwo[i]);
-                    if (arrayOne[i] != arrayTwo[i])
-                    {
-                        compare = false;
-                    }
-                }
+                Console.WriteLine("<");
+                return;
             }
-            else
+            if (compare == 1)
             {
-                Console.WriteLine("They are not the same length");
+                Console.WriteLine(">");
+                return;
             }
-            Console.WriteLine(compare);
-        }
+            if (compare == 0)
+            {
+                Console.WriteLine("=");
+                return;
+            }
+        }   
     }
 }

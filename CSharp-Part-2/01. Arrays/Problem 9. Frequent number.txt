@@ -1,0 +1,38 @@
+using System;
+
+namespace Frequent_number
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int count = 1;
+            int maxCount = 1;
+            int num = 0;
+            int length = int.Parse(Console.ReadLine());
+            int[] numArray = new int[length];
+            for (int i = 0; i < length; i++)
+            {
+                numArray[i] = int.Parse(Console.ReadLine());
+            }
+            Array.Sort(numArray);
+            for (int i = 1; i < length; i++)
+            {
+                if (numArray[i - 1] == numArray[i])
+                {
+                    count++;
+                    if (maxCount < count)
+                    {
+                        maxCount = count;
+                        num = numArray[i];
+                    }
+                }
+                else
+                {
+                    count = 1;
+                }
+            }
+            Console.WriteLine("{0} ({1} times)", num, maxCount);
+        }
+    }
+}
