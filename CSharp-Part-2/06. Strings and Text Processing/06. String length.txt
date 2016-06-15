@@ -1,0 +1,21 @@
+namespace String_length
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+            string result = string.Empty;
+            input = input.Replace("\\", string.Empty);
+            result = input.PadRight(20, '*');
+            Console.WriteLine(result);
+            
+        }
+    }
+}

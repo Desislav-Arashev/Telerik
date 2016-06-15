@@ -1,0 +1,109 @@
+using System;
+
+namespace Maximal_sum
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] input = Console.ReadLine().Split(' ');
+            int n = int.Parse(input[0]);
+            int m = int.Parse(input[1]);
+            int plus = 0;
+            int maxSum = int.MinValue;
+            int[,] arr = new int[n, m];
+            for (int i = 0; i < n; i++)
+            {
+                string[] numbers = Console.ReadLine().Split(' ');
+                for (int j = 0; j < m; j++)
+                {
+                    arr[i, j] = int.Parse(numbers[j]);
+                }
+            }
+
+            int sum = 0;
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < m; j++)
+                {
+
+                    int currNum = arr[i, j];
+
+
+                    do
+                    {
+                        sum++;
+                        plus++;
+                        if (j + plus == m)
+                        {
+                            break;
+                        }
+                    } while (currNum == arr[i, j + plus]);
+                    if (maxSum < sum)
+                    {
+                        maxSum = sum;
+                    }
+                    sum = 0;
+                    plus = 0;
+                    do
+
+
+                    {
+                        sum++;
+                        plus++;
+                        if (i + plus == n)
+                        {
+                            break;
+                        }
+                    } while (currNum == arr[i + plus, j]);
+                    if (maxSum < sum)
+                    {
+                        maxSum = sum;
+                    }
+                    sum = 0;
+                    plus = 0;
+
+
+
+                    do
+                    {
+                        sum++;
+                        plus++;
+                        if (j + plus == m || i+plus == n)
+                        {
+                            break;  
+                        }
+                    } while (currNum == arr[i + plus, j + plus]);
+                    if (maxSum < sum)
+                    {
+                        maxSum = sum;
+                    }
+                    sum = 0;
+                    plus = 0;
+
+
+                    do
+                    {
+                        sum++;
+                        plus++;
+                        if (i-plus < 0 || j+plus == m)
+                        {
+                            break;
+                        }
+                    } while (currNum == arr[i-plus,j+plus]);
+                    if (maxSum < sum)
+                    {
+                        maxSum = sum;
+                    }
+                    sum = 0;
+                    plus = 0;
+
+                }
+
+            }
+            Console.WriteLine(maxSum);
+        }
+    }
+}
+
+

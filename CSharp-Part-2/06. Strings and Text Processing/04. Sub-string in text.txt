@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Correct_brackets
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string pattern = Console.ReadLine().ToLower();
+            string inputString = Console.ReadLine().ToLower();
+            int count = 0;
+            int startindex = inputString.IndexOf(pattern);
+            while (startindex!=-1)
+            {
+                startindex = inputString.IndexOf(pattern, startindex + 1);
+                count++;
+            }
+            Console.WriteLine(count);
+        }
+    }
+}

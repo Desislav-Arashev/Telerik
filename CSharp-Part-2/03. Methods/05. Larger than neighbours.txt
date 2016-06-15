@@ -1,0 +1,40 @@
+using System;
+
+namespace Larger_than_neighbours
+{
+    class Program
+    {
+        static int count = 0;
+
+        static void Main(string[] args)
+        {
+            int size = int.Parse(Console.ReadLine());
+            int[] arr = new int[size];
+
+            string[] input = Console.ReadLine().Split(' ');
+
+            for (int j = 0; j < size; j++)
+            {
+                arr[j] = int.Parse(input[j]);
+            }
+
+            for (int i = 1; i < size; i++)
+            {
+                CheckIsLarger(i, arr);
+            }
+
+            Console.WriteLine(count);
+        }
+
+        static void CheckIsLarger(int position, params int[] arr)
+        {
+            if (position + 1 < arr.Length)
+            {
+                if (arr[position] > arr[position + 1] && arr[position] > arr[position - 1])
+                {
+                    count++;
+                }
+            }
+        }
+    }
+}

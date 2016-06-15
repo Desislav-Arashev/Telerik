@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="TopMenu">
+            <table>
+                <tr>
+                    <td class="item">View</td>
+                    <td class="item">Edit</td>
+                    <td class="item">Help</td>
+                </tr>
+            </table>
+        </div>
+        <input type="text" class="numbers" value="8854455">
+        <div class="binary">
+            <table >
+              <tr>
+                <td id="zero">0000</td>
+                <td id="zero">0000</td>
+                <td id="zero">0000</td>
+                <td id="zero">0000</td>
+                <td id="zero">0000</td>
+                <td id="zero">0000</td>
+                <td id="zero">0000</td>
+                <td id="zero">0000</td>
+              </tr>
+            </table>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+using System;
+using System.Text;
+
+class ReplaceTags
+{
+    static void Main()
+    {
+        try
+        {
+            double number = double.Parse(Console.ReadLine());
+            if (number<0)
+            {
+                Console.WriteLine("Invalid number");
+                return;
+            }
+            number = Math.Sqrt(number);
+            Console.WriteLine("{0:F3}",number);
+        }
+        catch (Exception)
+        {
+            Console.WriteLine("Invalid number");
+        }
+        finally
+        {
+            Console.WriteLine("Good bye");
+        }
+    }
+}

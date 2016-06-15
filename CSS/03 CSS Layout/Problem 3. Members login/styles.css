@@ -1,0 +1,67 @@
+section{
+  width: 662px;
+  height: 299px;
+  background-color: #3B3B3B;
+  border-radius: 7px;
+}
+.computer{
+  padding-left: 14px;
+  padding-top: 9px;
+  display:inline-block;
+  float: left;
+}
+.members{
+  padding-left: 22px;
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+}
+.inputname{
+  margin-left: 12px;
+  padding-left: 10px;
+  width: 135px;
+
+}
+.inputmail{
+  margin-left: 20px;
+  padding-left: 10px;
+  width: 135px;
+
+}
+body{
+  font-family: georgia,'Times New Roman';
+}
+.go{
+  background-image:url("images/button.gif");
+  width: 56px;
+  height: 28px;
+  border: 0px;
+  margin-left: 21px;
+  color: white;
+}
+.topmenu{
+background-image: url("images/from_shadow.jpg");
+height:40px;
+margin-top: -30px;
+}
+h2{
+  margin-left: 11px;
+  font-size: 24.5px;
+  margin-top: 19px;
+  color:#FAD210;
+}
+article{
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  margin-left: 13px;
+  margin-right: 35px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #A1A1A1;
+}
+span{
+  color:white;
+}

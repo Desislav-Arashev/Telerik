@@ -1,0 +1,9 @@
+body {
+    color: #0094ff;
+    font-size: 25px
+}
+p::first-line {
+    font-family: Edwardian Script ITC, Consolas;
+    font-size: 2em;
+    font-weight: bold;
+}

@@ -1,0 +1,77 @@
+body{
+  font-family: Helvetica;
+  font-stretch: ultra-expanded;
+  font-size: 12px;
+}
+section{
+  height: 538px;
+  width: 421px;
+  background: #EEE;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  font-weight: normal;
+  font-size: 18px;
+  margin-left: 12px;
+  margin-top: 12px;
+  font-stretch: ultra-condensed;
+}
+.box{
+  height: 118px;
+  border: 1px solid #999;
+  margin: 19px 10px;
+  margin-left: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+img{
+  margin: 15px;
+  border: 1px solid #999;
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+p{
+  width: 200px;
+  margin: 15px 0;
+  height: 30px;
+}
+.listenbtn{
+  right: 80px;
+  height: 21px;
+  width: 74px;
+}
+.listen{
+  position: absolute;
+  bottom: 20px;
+  right: 100px;
+
+}
+span{
+  color: white;
+  font-weight: lighter;
+  font-size: 12px;
+  font-family: Helvetica ;
+}
+.add{
+  position: absolute;
+  bottom: 20px;
+  right: 32px;
+}
+.addbtn{
+  height: 21px;
+  width: 58px;
+  right: 15px;
+}
+.listenbtn , .addbtn{
+border: 2px outset #be0b0f;
+position: absolute;
+bottom: 15px;
+}

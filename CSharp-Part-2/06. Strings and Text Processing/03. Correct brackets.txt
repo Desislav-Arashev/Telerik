@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Correct_brackets
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string inputString = Console.ReadLine();
+            if (inputString.IndexOf(')') < inputString.IndexOf('('))
+            {
+                Console.WriteLine("Incorrect");
+                return;
+            }
+            if (inputString.LastIndexOf(')') < inputString.IndexOf('('))
+            {
+                Console.WriteLine("Incorrect");
+                return;
+            }
+            int countLeft = 0;
+            int countRight = 0;
+            foreach (char letter in inputString)
+            {
+                if (letter == '(')
+                {
+                    countLeft++;
+                }
+                if (letter == ')')
+                {
+                    countRight++;
+                }
+            }
+            if (countLeft == countRight)
+            {
+                Console.WriteLine("Correct");
+            }
+            else
+            {
+                Console.WriteLine("Incorrect");
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+using System;
+
+namespace First_larger_than_neighbours
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string number = Console.ReadLine();
+            Console.WriteLine(ReverseNumber(number));
+        }
+
+        static decimal ReverseNumber(string number)
+        {
+            string num = string.Empty;
+            foreach (char sym in number)
+            {
+                num = sym + num;
+            }
+
+            decimal result = decimal.Parse(num);
+            return result;
+        }
+    }
+}

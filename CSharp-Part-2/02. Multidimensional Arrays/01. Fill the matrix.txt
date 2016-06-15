@@ -1,0 +1,161 @@
+using System;
+
+namespace Matrix
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            string letter = Console.ReadLine();
+            int num = 1;
+            int[,] arr = new int[n, n];
+            int ntemp = 1;
+            int tempcol = 0;
+            int col = 0;
+            int row = n - 1;
+            if (letter == "a")
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    for (int j = 0; j < n; j++)
+                    {
+                        arr[j, i] += num;
+                        num += 1;
+                    }
+                }
+            }
+
+            if (letter == "b")
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    for (int j = 0; j < n; j++)
+                    {
+                        if (i % 2 == 0)
+                        {
+                            arr[j, i] += num;
+                            num += 1;
+                        }
+                        else
+                        {
+                            arr[n - j - 1, i] += num;
+                            num += 1;
+                        }
+                    }
+                }
+            }
+
+            if (letter == "c")
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    int tempi = i;
+                    for (int j = 0; j < n; j++)
+                    {
+
+                        if (row == n - 1)
+                        {
+                            arr[row, col] = num;
+                            row -= ntemp;
+                            if (row != 0)
+                            {
+                                col = 0;
+                            }
+                            else
+                            {
+                                col = tempcol;
+                                tempcol++;
+                            }
+                            if (ntemp < n - 1)
+                            {
+                                ntemp += 1;
+                            }
+
+
+                        }
+                        else
+                        {
+                            if (col == n - 1)
+                            {
+
+                                arr[row, col] = num;
+                                row = 0;
+                                col = tempcol;
+                                tempcol++;
+                            }
+                            else
+                            {
+                                arr[row, col] = num;
+                                row++;
+                                col++;
+                            }
+
+
+                        }
+
+                        num++;
+                    }
+                }
+            }
+
+            int bottomRow = n - 1;
+            int topRow = 0;
+            int leftColumn = 0;
+            int rightColumn = n - 1;
+            int count = 1;
+            if (letter == "d")
+            {
+                if (n==1)
+                {
+                    Console.WriteLine("1");
+                    return;
+                }
+                for (int i = 0; i < n; i++)
+                {
+                    for (int j = topRow; j <= bottomRow; j++)
+                    {
+                        arr[j, leftColumn] = count;
+                        count++;
+                    }
+                    leftColumn++;
+                    for (int j = leftColumn; j <= rightColumn; j++)
+                    {
+                        arr[bottomRow, j] = count;
+                        count++;
+                    }
+                    bottomRow--;
+                    for (int j = bottomRow; j >= topRow; j--)
+                    {
+                        arr[j, rightColumn] = count;
+                        count++;
+                    }
+                    rightColumn--;
+                    for (int j = rightColumn; j >= leftColumn; j--)
+                    {
+                        arr[topRow, j] = count;
+                        count++;
+                    }
+                    topRow++;
+
+                }
+            }
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (j == n - 1)
+                    {
+                        Console.Write(arr[i, j]);
+                    }
+                    else
+                    {
+
+                        Console.Write(arr[i, j] + " ");
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}

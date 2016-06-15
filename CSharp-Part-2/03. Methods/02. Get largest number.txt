@@ -1,0 +1,28 @@
+using System;
+using System.Linq;
+
+namespace Get_largest_number
+{
+    class Say_Hello
+    {
+        static void Main(string[] args)
+        {
+            int[] input = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            Console.WriteLine(GetMax(input));
+        }
+
+        static int GetMax(params int[] a)
+        {
+            int max = int.MinValue;
+            foreach (int item in a)
+            {
+                if (item > max)
+                {
+                    max = item;
+                }
+            }
+
+            return max;
+        }
+    }
+}
