@@ -1,0 +1,9 @@
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\Task 1. class_123 in CSharp\bin\Debug\Task_1.class_123_in_CSharp.exe.config
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\Task 1. class_123 in CSharp\bin\Debug\Task_1.class_123_in_CSharp.exe
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\Task 1. class_123 in CSharp\bin\Debug\Task_1.class_123_in_CSharp.pdb
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\Task 1. class_123 in CSharp\obj\Debug\Task 1. class_123 in CSharp.csprojResolveAssemblyReference.cache
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\Task 1. class_123 in CSharp\obj\Debug\Task_1.class_123_in_CSharp.exe
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\Task 1. class_123 in CSharp\obj\Debug\Task_1.class_123_in_CSharp.pdb
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\03. Naming-Identifiers\Task 1. class_123 in CSharp\bin\Debug\Task_1.class_123_in_CSharp.exe.config
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\03. Naming-Identifiers\Task 1. class_123 in CSharp\obj\Debug\Task_1.class_123_in_CSharp.exe
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\03. Naming-Identifiers\Task 1. class_123 in CSharp\obj\Debug\Task_1.class_123_in_CSharp.pdb

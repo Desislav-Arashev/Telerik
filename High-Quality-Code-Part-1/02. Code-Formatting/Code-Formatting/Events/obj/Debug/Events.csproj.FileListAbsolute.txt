@@ -1,0 +1,2 @@
+C:\Users\deso9\Documents\Visual Studio 2015\Projects\Homework\Code-Formatting\Events\bin\Debug\Events.exe.config
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\02. Code-Formatting\Code-Formatting\Events\bin\Debug\Events.exe.config

@@ -1,0 +1,6 @@
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\03. Naming-Identifiers\Task 2. Make_Чуек in CSharp\bin\Debug\Task_2.Make_Чуек_in_CSharp.exe.config
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\03. Naming-Identifiers\Task 2. Make_Чуек in CSharp\bin\Debug\Task_2.Make_Чуек_in_CSharp.exe
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\03. Naming-Identifiers\Task 2. Make_Чуек in CSharp\bin\Debug\Task_2.Make_Чуек_in_CSharp.pdb
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\03. Naming-Identifiers\Task 2. Make_Чуек in CSharp\obj\Debug\Task_2.Make_Чуек_in_CSharp.exe
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\03. Naming-Identifiers\Task 2. Make_Чуек in CSharp\obj\Debug\Task_2.Make_Чуек_in_CSharp.pdb
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-1\03. Naming-Identifiers\Task 2. Make_Чуек in CSharp\obj\Debug\Task 2. Make_Чуек in CSharp.csprojResolveAssemblyReference.cache
