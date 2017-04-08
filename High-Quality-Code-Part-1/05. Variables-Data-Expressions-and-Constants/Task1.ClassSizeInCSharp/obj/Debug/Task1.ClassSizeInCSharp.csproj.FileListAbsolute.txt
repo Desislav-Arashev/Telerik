@@ -1,0 +1,6 @@
+C:\Users\deso9\Documents\Visual Studio 2015\Projects\Homework\VariablesDataExpressionsАndConstants\Task1.ClassSizeInCSharp\bin\Debug\Task1.ClassSizeInCSharp.exe.config
+C:\Users\deso9\Documents\Visual Studio 2015\Projects\Homework\VariablesDataExpressionsАndConstants\Task1.ClassSizeInCSharp\bin\Debug\Task1.ClassSizeInCSharp.exe
+C:\Users\deso9\Documents\Visual Studio 2015\Projects\Homework\VariablesDataExpressionsАndConstants\Task1.ClassSizeInCSharp\bin\Debug\Task1.ClassSizeInCSharp.pdb
+C:\Users\deso9\Documents\Visual Studio 2015\Projects\Homework\VariablesDataExpressionsАndConstants\Task1.ClassSizeInCSharp\obj\Debug\Task1.ClassSizeInCSharp.csprojResolveAssemblyReference.cache
+C:\Users\deso9\Documents\Visual Studio 2015\Projects\Homework\VariablesDataExpressionsАndConstants\Task1.ClassSizeInCSharp\obj\Debug\Task1.ClassSizeInCSharp.exe
+C:\Users\deso9\Documents\Visual Studio 2015\Projects\Homework\VariablesDataExpressionsАndConstants\Task1.ClassSizeInCSharp\obj\Debug\Task1.ClassSizeInCSharp.pdb

@@ -1,0 +1,5 @@
+C:\Users\deso9\Documents\Visual Studio 2015\Projects\Homework\VariablesDataExpressionsАndConstants\Task2.MethodPrintStatisticsinCSharp\bin\Debug\Task2.MethodPrintStatisticsinCSharp.exe.config
+C:\Users\deso9\Documents\Visual Studio 2015\Projects\Homework\VariablesDataExpressionsАndConstants\Task2.MethodPrintStatisticsinCSharp\bin\Debug\Task2.MethodPrintStatisticsinCSharp.exe
+C:\Users\deso9\Documents\Visual Studio 2015\Projects\Homework\VariablesDataExpressionsАndConstants\Task2.MethodPrintStatisticsinCSharp\bin\Debug\Task2.MethodPrintStatisticsinCSharp.pdb
+C:\Users\deso9\Documents\Visual Studio 2015\Projects\Homework\VariablesDataExpressionsАndConstants\Task2.MethodPrintStatisticsinCSharp\obj\Debug\Task2.MethodPrintStatisticsinCSharp.exe
+C:\Users\deso9\Documents\Visual Studio 2015\Projects\Homework\VariablesDataExpressionsАndConstants\Task2.MethodPrintStatisticsinCSharp\obj\Debug\Task2.MethodPrintStatisticsinCSharp.pdb
