@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Homework
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
+            c *= Math.PI;
+            c /= 180;
+            c = Math.Sin(c);
+            double result = (a * b * c) / 2;
+            Console.WriteLine("{0:F2}",result);
+        }
+
+    }
+}

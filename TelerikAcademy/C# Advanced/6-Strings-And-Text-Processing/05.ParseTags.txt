@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Parse_tags
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string text = Console.ReadLine();
+            int startIndex = text.IndexOf("<upcase>");
+            int endIndex = text.IndexOf("</upcase>");
+            if (startIndex==-1)
+            {
+                Console.WriteLine(text);
+                return;
+            }
+            string result = text.Substring(0,startIndex);
+            while (text.IndexOf("<upcase>", startIndex + 1) != -1)
+            {
+                result += text.Substring(startIndex + 8 ,endIndex - startIndex - 8).ToUpper();
+                startIndex = text.IndexOf("<upcase>",startIndex+1);
+                result += text.Substring(endIndex + 9, startIndex - endIndex - 9);
+                endIndex = text.IndexOf("</upcase>",endIndex+1);
+            }
+            if (startIndex != -1)
+            {
+                result += text.Substring(startIndex + 8, endIndex - startIndex - 8).ToUpper();
+                result += text.Substring(endIndex + 9);
+            }
+            Console.WriteLine(result);
+
+        }
+    }
+}

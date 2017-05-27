@@ -1,0 +1,44 @@
+using System;
+using System.Text;
+
+class ReplaceTags
+{
+    static void Main()
+    {
+        int start = 1;
+        int end = int.MaxValue;
+        ReadNumber(start, end);
+    }
+    static void ReadNumber(int start, int end)
+    {
+        int[] arr = new int[10];
+        try
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                int currNumber = int.Parse(Console.ReadLine());
+                if (currNumber > start)
+                {
+                    arr[i] = currNumber;
+                    start = currNumber;
+                }
+                else
+                {
+                    throw new ArgumentException("Exception");
+                }
+            }
+
+            Console.Write("1");
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(" < {0}", arr[i]);
+            }
+            Console.Write(" < 100");
+        }
+        catch (Exception)
+        {
+
+            Console.WriteLine("Exception");
+        }
+    }
+}

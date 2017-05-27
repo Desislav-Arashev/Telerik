@@ -1,0 +1,28 @@
+namespace workshop
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.Numerics;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string numInBase2 = Console.ReadLine(); ;
+            Console.WriteLine(BaseNtoDec(numInBase2));
+        }
+
+        static BigInteger BaseNtoDec(string Number)
+        {
+            BigInteger result = 0;
+            foreach (char num in Number)
+            {
+                result = result * 2 + (num - '0');
+            }
+            return result;
+        }
+    }
+}

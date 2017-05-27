@@ -1,0 +1,29 @@
+namespace String_length
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = Console.ReadLine();
+            byte[] unibyte = Encoding.Unicode.GetBytes(str);
+            StringBuilder uniString = new StringBuilder(str.Length*7); 
+            foreach (byte b in unibyte)
+            {
+                if ((b.ToString("X").PadLeft(4, '0')) == "0000")
+                {
+                    continue;
+                }
+                uniString.Append(string.Format("{0}{1}", @"\u", b.ToString("X").PadLeft(4, '0')));
+
+            }
+            Console.WriteLine(uniString);
+        }
+
+    }
+}

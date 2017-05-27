@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+class Extract_sentences
+{
+
+    static void Main()
+    {
+        string word = Console.ReadLine();
+        string text = Console.ReadLine();
+        string result = string.Empty;
+        string[] split = text.Split(new[] { '.' }, StringSplitOptions.RemoveEmptyEntries);
+        char[] separators = text.Where(c => !char.IsLetter(c)).Distinct().ToArray();
+        foreach (string sentence in split)
+        {
+            string[] words = sentence.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+            foreach (var currentWord  in words)
+            {
+                if (word == currentWord.Trim())
+                {
+                    Console.Write("{0}. ",sentence.Trim());
+                    break;
+                }
+            }
+        }
+    }
+}

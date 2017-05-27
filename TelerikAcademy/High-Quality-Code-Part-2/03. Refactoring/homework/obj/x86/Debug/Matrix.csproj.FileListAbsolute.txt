@@ -1,0 +1,5 @@
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-2\03. Refactoring\homework\bin\Debug\Matrix.exe
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-2\03. Refactoring\homework\bin\Debug\Matrix.pdb
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-2\03. Refactoring\homework\obj\x86\Debug\Matrix.exe
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-2\03. Refactoring\homework\obj\x86\Debug\Matrix.pdb
+C:\Users\deso9\Documents\GitHub\Telerik\High-Quality-Code-Part-2\03. Refactoring\homework\obj\x86\Debug\Matrix.csprojResolveAssemblyReference.cache

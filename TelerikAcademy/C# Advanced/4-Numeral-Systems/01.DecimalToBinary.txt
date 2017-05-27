@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Numerics;
+
+namespace workshop
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            BigInteger decNum = BigInteger.Parse(Console.ReadLine());
+            string result = string.Empty;
+
+            while (decNum / 2 != 0)
+            {
+                if (decNum%2 == 1)
+                {
+                    result = '1' + result;
+                }
+                else
+                {
+                    result = '0' + result;
+                }
+                decNum /= 2;
+
+            } ;
+            if (decNum % 2 == 1)
+            {
+                result = '1' + result;
+            }
+            else
+            {
+                result = '0' + result;
+            }
+            Console.WriteLine(result);
+        }
+
+    }
+}

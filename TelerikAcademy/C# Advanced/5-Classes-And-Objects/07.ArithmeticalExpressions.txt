@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Homework
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] values = Console.ReadLine().Split(' ').ToArray();
+            Console.WriteLine(CalculateString(values));
+        }
+        static long CalculateString(string[] numbers)
+        {
+            long result = 0;
+            foreach (string number in numbers)
+            {
+                result += long.Parse(number);
+            }
+            return result;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Numerics;
+
+namespace Hexadecimal_to_binary
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            BigInteger binary = BigInteger.Parse(Console.ReadLine());
+            string result = BinToHex(binary);
+            char[] charresult = result.ToCharArray();
+            Array.Reverse(charresult);
+            for (int i = 0; i < charresult.Length; i++)
+            {
+                Console.Write(charresult[i]);
+            }
+
+        }
+
+        static string BinToHex(BigInteger binary)
+        {
+            string result = string.Empty;
+            do
+            {
+                string temp = (binary % 10000).ToString();
+                while (temp.Length < 4)
+                {
+                    temp = 0 + temp;
+                }
+                result += HexBin[temp].ToString();
+                binary /= 10000;
+            } while (binary != 0);
+            return result;
+
+        }
+
+        static Dictionary<string, string> HexBin = new Dictionary<string, string>()
+        {
+            { "0000" ,"0"},
+            { "0001" ,"1"},
+            { "0010" ,"2"},
+            { "0011" ,"3"},
+            { "0100" ,"4"},
+            { "0101" ,"5"},
+            { "0110" ,"6"},
+            { "0111" ,"7"},
+            { "1000" ,"8"},
+            { "1001" ,"9"},
+            { "1010" ,"A"},
+            { "1011" ,"B"},
+            { "1100" ,"C"},
+            { "1101" ,"D"},
+            { "1110" ,"E"},
+            { "1111" ,"F"},
+        };
+
+    }
+}

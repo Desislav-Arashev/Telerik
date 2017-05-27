@@ -1,0 +1,6 @@
+C:\Users\deso9\documents\visual studio 2017\Projects\Code Tuning and Optimization Homework\Compare sort algorithms\bin\Debug\Compare sort algorithms.exe.config
+C:\Users\deso9\documents\visual studio 2017\Projects\Code Tuning and Optimization Homework\Compare sort algorithms\bin\Debug\Compare sort algorithms.exe
+C:\Users\deso9\documents\visual studio 2017\Projects\Code Tuning and Optimization Homework\Compare sort algorithms\bin\Debug\Compare sort algorithms.pdb
+C:\Users\deso9\documents\visual studio 2017\Projects\Code Tuning and Optimization Homework\Compare sort algorithms\obj\Debug\Compare sort algorithms.csprojResolveAssemblyReference.cache
+C:\Users\deso9\documents\visual studio 2017\Projects\Code Tuning and Optimization Homework\Compare sort algorithms\obj\Debug\Compare sort algorithms.exe
+C:\Users\deso9\documents\visual studio 2017\Projects\Code Tuning and Optimization Homework\Compare sort algorithms\obj\Debug\Compare sort algorithms.pdb
